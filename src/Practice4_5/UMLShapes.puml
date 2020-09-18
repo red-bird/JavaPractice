@@ -30,4 +30,4 @@ Square <|-- SmallSquare
 Square <|-- BigSquare
 
 
-@endumlle
+@enduml
