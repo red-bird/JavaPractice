@@ -6,7 +6,7 @@ class Circle
     {
         setR(r);
     }
-    double r = 0;
+    public double r = 0;
 
     public void setR(double r) {
         this.r = r;
@@ -37,6 +37,7 @@ public class CircleTest {
     public static void main(String[] args) {
         Circle circle = new Circle(1);
         circle.setR(5);
+
         System.out.println(circle.getR());
         System.out.println(circle.getDiameter());
         System.out.println(circle.getLength());
