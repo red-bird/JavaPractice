@@ -1,0 +1,39 @@
+@startuml
+
+abstract class Shape
+{
+dimension : int
+}
+
+interface IMoveable
+{
++Move(x: int, y: int)
+}
+
+class Rectangle extends Shape
+{
+a : int
+b : int
+}
+
+class MoveablePoint implements IMoveable
+{
+speed : int
++Move(int x, int y)
+}
+class MoveableRectangle extends Rectangle implements IMoveable
+{
++Move(int x, int y)
+}
+
+class MoveableRectangle2
+{
+x : MoveablePoint
+y : MoveablePoint
++checkSpeed(x : MoveablePoint, y : MoveablePoint)
+}
+
+MoveablePoint --o MoveableRectangle2
+
+
+@enduml
