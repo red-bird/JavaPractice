@@ -1,4 +1,4 @@
-package Practice15;
+package homework.Practice15;
 
 class MyCollection {
     private int[] arr;
